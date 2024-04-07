@@ -2,8 +2,8 @@ import React from 'react'
 
 function Contact() {
   return (
-    <section id='Home' className='flex flex-col gap-8 p-5'>
-      <div className='flex items-center gap-3 ml-8'>
+    <section id='Home' className='flex flex-col gap-8 p-5 items-center'>
+      <div className='flex items-center gap-3'>
         <a href='/'><img src='https://cdn.iconscout.com/icon/free/png-256/free-contacts-47-461709.png'
         className=' w-12'></img></a>
         <h1 className='text-3xl'><b>Contacts</b></h1>
