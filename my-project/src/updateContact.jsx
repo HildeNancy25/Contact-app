@@ -1,5 +1,4 @@
 import React from 'react'
-import Contact from './App'
 
 const UpdateContact = () => {
   return (
@@ -12,6 +11,11 @@ const UpdateContact = () => {
       <div className='mt-5 md:text-3xl sm:text-xl'>Updating contact information</div>
       <div>
         <form className=' flex flex-col gap-3'>
+          <label>
+            Profile picture:
+            <input className='flex border border-slate-500 text-gray-500 h-40 w-40' type='' name='change photo'/>
+              <a><button type='submit' className='bg-yellow-500 p-2 border rounded-2xl mt-4'>Upload picture</button></a>
+          </label>
           <label>
             Full names:
             <input className='flex border border-slate-500 text-gray-500 p-2 md:w-80 sm:w-72' type='text' name='Full names'/>

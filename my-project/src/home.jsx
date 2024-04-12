@@ -10,8 +10,16 @@ function Contact() {
       </div>
       <div className='flex gap-24 items-center'>
         <p>All contacts:</p>
-        <a href='/AddContact' className='bg-yellow-500 p-2 border rounded-2xl'> <button> ADD NEW </button></a>
+        <div className='flex gap-5'>
+          <a href='/AddContact' className='bg-yellow-500 p-2 border rounded-2xl'> <button> ADD NEW </button></a>
+          <a>
+            <img href='https://cdn0.iconfinder.com/data/icons/30-hardware-line-icons/64/Search-512.png'></img>
+          </a>
+        </div>
       </div>
+
+      {/* CONTACTS  */}
+
       <div className=' hover:border-l-2 hover:border-yellow-400 p-2 flex items-center gap-2'>
         <div>
           <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg' className='w-16'></img>
