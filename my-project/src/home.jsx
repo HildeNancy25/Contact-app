@@ -19,67 +19,46 @@ function Contact() {
       </div>
 
       {/* CONTACTS  */}
+      <div>
 
-      <div className=' hover:border-l-2 hover:border-yellow-400 p-2 flex items-center gap-2'>
-        <div>
-          <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg' className='w-16'></img>
+        <div className=' hover:border-l-2 hover:border-yellow-400 p-2 flex items-center gap-2'>
+          <div>
+            <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg' className='w-16'></img>
+          </div>
+          <div>
+              <a href='/ViewContact'>
+                  <p className='text-xl'>Uwera Annick</p>
+                  <p>0788 888 888</p>
+                  <p>uweraa@gmail.com</p>
+              </a>
+          </div>
         </div>
-        <div>
-            <a href='/ViewContact'>
-                <p className='text-xl'>Uwera Annick</p>
-                <p>0788 888 888</p>
-                <p>uweraa@gmail.com</p>
-            </a>
+        <div className='hover:border-l-2 hover:border-yellow-400 p-2 flex items-center gap-2'>
+          <div>
+            <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg' className='w-16'></img>
+          </div>
+          <div>
+              <a href='/ViewContact'>
+                  <p className='text-xl'>Samantha Umwali</p>
+                  <p>0788 888 888</p>
+                  <p>umwalisam@gmail.com</p>
+              </a>
+          </div>
         </div>
-      </div>
-      <div className='hover:border-l-2 hover:border-yellow-400 p-2 flex items-center gap-2'>
-        <div>
-          <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg' className='w-16'></img>
-        </div>
-        <div>
-            <a href='/ViewContact'>
-                <p className='text-xl'>Samantha Umwali</p>
-                <p>0788 888 888</p>
-                <p>umwalisam@gmail.com</p>
-            </a>
-        </div>
-      </div>
-      <div className=' hover:border-l-2 hover:border-yellow-400 p-2 flex items-center gap-2'>
-        <div>
-          <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg' className='w-16'></img>
-        </div>
-        <div>
-            <a href='/ViewContact'>
-                <p className='text-xl'>Gloria Kamwezi</p>
-                <p>0788 888 888</p>
-                <p>glorkz@gmail.com</p>
-            </a>
-        </div>
-      </div>
-      <div className=' hover:border-l-2 hover:border-yellow-400 p-2 flex items-center gap-2'>
-        <div>
-          <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg' className='w-16'></img>
-        </div>
-        <div>
-            <a href='/ViewContact'>
-                <p className='text-xl'>Hannah Gisagara</p>
-                <p>0788 888 888</p>
-                <p>gsghannah@gmail.com</p>
-            </a>
+        <div className=' hover:border-l-2 hover:border-yellow-400 p-2 flex items-center gap-2'>
+          <div>
+            <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg' className='w-16'></img>
+          </div>
+          <div>
+              <a href='/ViewContact'>
+                  <p className='text-xl'>Gloria Kamwezi</p>
+                  <p>0788 888 888</p>
+                  <p>glorkz@gmail.com</p>
+              </a>
+          </div>
         </div>
       </div>
-      <div className=' hover:border-l-2 hover:border-yellow-400 p-2 flex items-center gap-2'>
-        <div>
-          <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg' className='w-16'></img>
-        </div>
-        <div>
-            <a href='/ViewContact'>
-                <p className='text-xl'>Gakiza Aime</p>
-                <p>0788 888 888</p>
-                <p>aimee30@gmail.com</p>
-            </a>
-        </div>
-      </div>
+      
     </section>
   )
 }
