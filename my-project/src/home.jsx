@@ -1,7 +1,26 @@
 import React from 'react'
+import { useState,useEffect } from 'react'
 
-function Contact() {
-  return (
+
+const Contact = () => {
+
+  const [names, setNames] = useState({
+    name:'Anna Mary',
+    phone: '078888888',
+    email: 'anna@gmail.com',
+    message: ''
+  })
+
+  // testing 
+
+  function checkNames (){
+   if(names.name === 'Anna Mary'){
+    setNames.message = 'name check successful'
+    return setNames.message;
+   }
+  }
+   
+return (
     <section id='Home' className='flex flex-col gap-8 p-5 items-center'>
       <div className='flex items-center gap-3'>
         <a href='/'><img src='https://cdn.iconscout.com/icon/free/png-256/free-contacts-47-461709.png'
@@ -17,48 +36,21 @@ function Contact() {
           </a>
         </div>
       </div>
-
-      {/* CONTACTS  */}
-      <div>
-
-        <div className=' hover:border-l-2 hover:border-yellow-400 p-2 flex items-center gap-2'>
-          <div>
-            <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg' className='w-16'></img>
-          </div>
-          <div>
-              <a href='/ViewContact'>
-                  <p className='text-xl'>Uwera Annick</p>
-                  <p>0788 888 888</p>
-                  <p>uweraa@gmail.com</p>
-              </a>
-          </div>
+      <div className='flex flex-row gap-4hover:border-l-2 hover:border-yellow-400 px-3'>
+        <div className='w-20'>
+          <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg'></img>
         </div>
-        <div className='hover:border-l-2 hover:border-yellow-400 p-2 flex items-center gap-2'>
-          <div>
-            <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg' className='w-16'></img>
-          </div>
-          <div>
-              <a href='/ViewContact'>
-                  <p className='text-xl'>Samantha Umwali</p>
-                  <p>0788 888 888</p>
-                  <p>umwalisam@gmail.com</p>
-              </a>
-          </div>
-        </div>
-        <div className=' hover:border-l-2 hover:border-yellow-400 p-2 flex items-center gap-2'>
-          <div>
-            <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg' className='w-16'></img>
-          </div>
-          <div>
-              <a href='/ViewContact'>
-                  <p className='text-xl'>Gloria Kamwezi</p>
-                  <p>0788 888 888</p>
-                  <p>glorkz@gmail.com</p>
-              </a>
-          </div>
+        <div className='flex flex-col gap-2'>
+          <a href='/viewContact'><div> {names.name}  </div></a>
+          <a href='/viewContact'><div> {names.phone}  </div></a>
+          <a href='/viewContact'><div> {names.email}  </div></a>
         </div>
       </div>
-      
+        
+      {/* <div className='p-3 border-2 border-yellow-600 rounded-2xl w-20'>
+        <button onClick={checkNames}>Check</button>
+        <span> {names.message} </span>
+      </div> */}
     </section>
   )
 }
