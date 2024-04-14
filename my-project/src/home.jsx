@@ -1,15 +1,26 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
+import Contact from './Contact';
 
 
-const Contact = () => {
+const Home = () => {
 
-  const [names, setNames] = useState({
-    name:'Anna Mary',
-    phone: '078888888',
-    email: 'anna@gmail.com',
-    message: ''
-  })
+  const [contacts, setContacts] = useState([]);
+    // name:'Anna Mary',
+    // phone: '078888888',
+    // email: 'anna@gmail.com',
+    // message: ''
+  
+
+  useEffect(() =>{
+    FetchContacts()
+      .then((response) => {
+        setContacts(response);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [])
 
   // testing 
 
@@ -41,9 +52,14 @@ return (
           <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg'></img>
         </div>
         <div className='flex flex-col gap-2'>
-          <a href='/viewContact'><div> {names.name}  </div></a>
+          <div>
+            {contacts.map((contact) => (
+              <Contact key={contact._id} contact={contact} />
+            ))}
+          </div>
+          {/* <a href='/viewContact'><div> {names.name}  </div></a>
           <a href='/viewContact'><div> {names.phone}  </div></a>
-          <a href='/viewContact'><div> {names.email}  </div></a>
+          <a href='/viewContact'><div> {names.email}  </div></a> */}
         </div>
       </div>
         
@@ -55,4 +71,4 @@ return (
   )
 }
 
-export default Contact
+export default Home

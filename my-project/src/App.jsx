@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import ViewContact from './viewContact'
 import UpdateContact from './updateContact'
+import Home from './home';
 
 function App() {
   
@@ -17,7 +18,7 @@ function App() {
             <Routes>
                 <Route
                     path= '/'
-                    element= {<Contact />}
+                    element= {<Home />}
                 />
                 <Route
                     path= '/ViewContact'
