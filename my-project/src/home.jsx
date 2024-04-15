@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
+import { FetchContacts } from "./apis/contacts"
 import Contact from './Contact';
 
 
@@ -42,15 +43,12 @@ return (
         <p>All contacts:</p>
         <div className='flex gap-5'>
           <a href='/AddContact' className='bg-yellow-500 p-2 border rounded-2xl'> <button> ADD NEW </button></a>
-          <a>
-            <img href='https://cdn0.iconfinder.com/data/icons/30-hardware-line-icons/64/Search-512.png'></img>
-          </a>
         </div>
       </div>
       <div className='flex flex-row gap-4hover:border-l-2 hover:border-yellow-400 px-3'>
-        <div className='w-20'>
+        {/* <div className='w-20'>
           <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg'></img>
-        </div>
+        </div> */}
         <div className='flex flex-col gap-2'>
           <div>
             {contacts.map((contact) => (
