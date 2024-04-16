@@ -21,7 +21,7 @@ function App() {
                     element= {<Home />}
                 />
                 <Route
-                    path= '/ViewContact'
+                    path= '/:id'
                     element= {<ViewContact />}
                 />
                 <Route

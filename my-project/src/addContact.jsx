@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import ResponseMessage from './Response';
 import { useNavigate } from 'react-router-dom';
+import { AddingContact } from './apis/contacts';
 
 const AddContact = () => {
 
@@ -20,6 +21,7 @@ const AddContact = () => {
 
   const submitContacts = (event) => {
     event.preventDefault();
+    console.log(contact);
 
     if (contact.fullName === ''){
       setMessage({
@@ -41,14 +43,17 @@ const AddContact = () => {
       return;
     } else {
       setLoading(true);
+      console.log('loading');
 
-      AddContact(contact)
-      .then(response => {
+      AddingContact(contact)
+      .then((response) => {
         setLoading(false);
         setMessage({
           type: 'success',
           content: response
-        });
+    }); 
+    console.log('then');
+
 
         setContact({
           fullName: '',
@@ -58,14 +63,15 @@ const AddContact = () => {
 
         setTimeout(() =>{
           navigate('/')
-        }, 5000)
+        }, 1000)
       })
       .catch ((error) =>{
         setMessage({
           type: 'error',
           content: error
         })
-      })
+      console.log('catch');
+    })
     }
   };
   const handleInput = (event) => {
@@ -87,12 +93,12 @@ const AddContact = () => {
         <form onSubmit={submitContacts} className='flex flex-col gap-3'>
         <label>
             Full names:
-            <input className='flex border border-slate-500 p-2 md:w-80 sm:w-72' type='text' name='Full names'
+            <input className='flex border border-slate-500 p-2 md:w-80 sm:w-72' type='text' name='fullName'
             value={contact.fullName} onChange={handleInput} placeholder='enter names'/>
           </label>
           <label>
             Email:
-            <input className='flex border border-slate-500 p-2 md:w-80 sm:w-72' type='email' name='Email'
+            <input className='flex border border-slate-500 p-2 md:w-80 sm:w-72' type='email' name='email'
             value={contact.email} onChange={handleInput} placeholder='enter email'/>
           </label>
           <label>
@@ -108,8 +114,6 @@ const AddContact = () => {
             Address:
             <input className='flex border border-slate-500 flex-col-reverse p-2 md:w-80 sm:w-72' type='text' name='address'/>
           </label> */}
-        </form>
-        <a href='/'>
           <button type='submit'
             disabled={loading}
             className='bg-yellow-500 p-2 border rounded-2xl mt-4'
@@ -117,7 +121,8 @@ const AddContact = () => {
               {loading && 'loading...'}
               {!loading && 'Add Contact'}
           </button>
-        </a>
+        </form>
+       
         <div className='w-40 border-yellow-300'>
         <ResponseMessage type={message.type} content={message.content} />
         </div>

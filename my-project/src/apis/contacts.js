@@ -28,7 +28,7 @@ export const UpdateContact = (id) => {
 
 };
 
-export const AddContact = (contact) => {
+export const AddingContact = (contact) => {
     return axios.post(`${API}/contact/add`, contact)
         .then((response) => {
             console.log(response.data.message);

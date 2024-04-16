@@ -11,8 +11,7 @@ const Contact = ({ contact }) => {
                 className=""
             ></span>
             
-
-            <div className="flex sm:justify-between md:gap-12 sm:gap-8 hover:border-l-2 hover:border-yellow-300 pl-3">
+            <div className="flex md:gap-12 border-2 border-gray-500 p-9 sm:gap-8 w-72 hover:border-yellow-300 pl-3">
                 <div className="">
                 <img
                     src="https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg"
