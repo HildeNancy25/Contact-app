@@ -1,14 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useState } from 'react';
+import ResponseMessage from './Response';
 import { useNavigate } from 'react-router-dom';
 
 const AddContact = () => {
 
-  const [message, setMessage] =-useState({
+  const [message, setMessage] = useState({
     type: '',
     content: ''
   });
 
-  const navigate = ueeNavigate();
+  const navigate = useNavigate();
   const [loading, setLoading] = useState (false);
   const [contact, setContact] = useState({
     fullName: '',
@@ -82,7 +84,7 @@ const AddContact = () => {
         <p>HAVING NEW CONTACT?</p>
       </div>
       <div>
-        <form onSubmit={submittContacts} className='flex flex-col gap-3'>
+        <form onSubmit={submitContacts} className='flex flex-col gap-3'>
         <label>
             Full names:
             <input className='flex border border-slate-500 p-2 md:w-80 sm:w-72' type='text' name='Full names'
@@ -108,8 +110,7 @@ const AddContact = () => {
           </label> */}
         </form>
         <a href='/'>
-          <button
-            type='submit'
+          <button type='submit'
             disabled={loading}
             className='bg-yellow-500 p-2 border rounded-2xl mt-4'
             >
@@ -118,7 +119,7 @@ const AddContact = () => {
           </button>
         </a>
         <div className='w-40 border-yellow-300'>
-          <ResponseMessage type ={message.type} content={message.content} />
+        <ResponseMessage type={message.type} content={message.content} />
         </div>
       </div>
     </section>
