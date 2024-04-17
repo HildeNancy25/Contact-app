@@ -24,7 +24,7 @@ export const FetchContactById = (id) => {
         });
 };
 
-export const UpdateContact = (id) => {
+export const UpdatingContact = (id) => {
 
 };
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import Contact from './home'
 import AddContact from './addContact'
 import {
   BrowserRouter as Router,
@@ -25,7 +24,7 @@ function App() {
                     element= {<ViewContact />}
                 />
                 <Route
-                    path= '/UpdateContact'
+                    path= '/UpdateContact/:id'
                     element= {<UpdateContact />}
                 />
                 <Route
