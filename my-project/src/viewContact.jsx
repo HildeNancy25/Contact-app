@@ -22,24 +22,6 @@ function ViewContact() {
   },[params.id])
 
 
-
-  // useEffect(() => {
-  //   setUserId(params.id)
-  // })  
-
-  // const viewContact = () => {
-  //   axios.get('http://localhost:3000/api/v1/tasks/findById?id=params.id')
-  //   .then((response) =>{
-  //     console.log(response);
-  //   })
-  //   .catch((err) =>{
-  //     console.log(err);
-  //   })
-  // }
-
-
-
-
   return (
     <section className='flex flex-col gap-8 p-5 items-center'>
         <div className='flex items-center gap-3'>

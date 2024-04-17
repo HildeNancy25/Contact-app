@@ -46,9 +46,6 @@ return (
         </div>
       </div>
       <div className='flex flex-row gap-4hover:border-l-2 shadow hover:shadow-2xl hover:border-yellow-400 px-3'>
-        {/* <div className='w-20'>
-          <img src='https://icon-library.com/images/contacts-icon-png/contacts-icon-png-16.jpg'></img>
-        </div> */}
         <div className='flex flex-col gap-2  border-black'>
           <div className='flex justify-center items-start flex-wrap gap-5'>
             {contacts.map((contact) => (
