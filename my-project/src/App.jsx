@@ -8,6 +8,8 @@ import {
 import ViewContact from './viewContact'
 import UpdateContact from './updateContact'
 import Home from './home';
+import SignIn from './Authentication/signIn';
+import SignUp from './Authentication/signUp';
 
 function App() {
   
@@ -15,7 +17,7 @@ function App() {
     <>
         <Router>
             <Routes>
-                <Route
+                <Route 
                     path= '/'
                     element= {<Home />}
                 />
@@ -30,6 +32,14 @@ function App() {
                 <Route
                     path= '/AddContact'
                     element= {<AddContact />}
+                />
+                <Route 
+                    path='/SignUp'
+                    element={<SignUp />}
+                />
+                <Route 
+                    path='/SignIn'
+                    element={<SignIn />}
                 />
             </Routes>
         </Router>
