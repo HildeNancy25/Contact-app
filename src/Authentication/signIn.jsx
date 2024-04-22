@@ -83,7 +83,7 @@ const SignIn = () => {
           <div className='mt-3'>
             <Link to='/'
               className='bg-yellow-500 p-2 border rounded-2xl mt-4 w-20'
-            >  
+            >
               {loading && '...'}
               {!loading && 'SIGN IN'}
             </Link>
