@@ -4,10 +4,10 @@ const Contacts = ({ contact }) => {
     return (
         <section className="mb-8">
         <Link
-            to={`${contact._id}`}
+            to={`/view/${contact._id}`}
             className=""
         >
-            <span
+            <span 
                 className=""
             ></span>
             

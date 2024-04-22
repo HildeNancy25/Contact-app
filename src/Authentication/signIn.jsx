@@ -3,62 +3,7 @@ import { Link } from 'react-router-dom'
 
 const SignIn = () => {
 
-  const [response, setResponse] = useState({
-    type: '',
-    content: ''
-  });
-
-  const [loading, setLoading] = useState(false);
-  const [signIn, setSignIn] = useState({
-    email: '',
-    password: ''
-  });
-
-
-  const handleSignIn = (event) => {
-    event.preventDefault();
-    setLoading(true);
-
-    signInFunction(signIn)
-      .then(response => {
-        console.log(response);
-        setResponse({
-          type: 'success',
-          content: 'You are Logged IN !'
-        });
-        localStorage.setItem('user', JSON.stringify(response.user));
-        localStorage.setItem('token', response.token);
-
-        setTimeout(() => {
-          setLoading(false);
-        }, 2000);
-        setSignIn({
-          email: '',
-          password: ''
-        });
-        window.location.replace('/Home')
-      })
-      .catch(error => {
-        console.log(error.message);
-
-        setTimeout(() => {
-          setLoading(false);
-        }, 2000);
-        setResponse({
-          type: '',
-          content: ''
-        });
-      })
-  }
-
-  const handleInput = (event) => {
-    event.preventDefault({
-      ...SignIn,
-      [event.target.name]: event.target.value
-    })
-  }
-
-  return (
+   return (
 
     <section className='flex flex-col justify-center items-center mt-32'>
       <div className='w-5/12 h-96 border-2 border-gray-400 flex flex-col items-center'>
@@ -78,7 +23,7 @@ const SignIn = () => {
           </label>
           <div className='flex flex-row gap-5'>
             <Link to='' className=' text-blue-400 underline' >Forgot password ?</Link>
-            <Link to='/SignUp' className=' text-blue-400 underline' >Don't have account ?</Link>
+            <Link to='/sign-up' className=' text-blue-400 underline' >Don't have account ?</Link>
           </div>
           <div className='mt-3'>
             <Link to='/'

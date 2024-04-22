@@ -42,13 +42,13 @@ return (
           <h1 className='md:text-3xl sm:text-lg'><b>Contacts</b></h1>
         </div>
         <div>
-          <Link to='/SignIn' className='bg-yellow-500 p-2 border rounded-2xl'> SIGN IN </Link>
+          <Link to='/sign-in' className='bg-yellow-500 p-2 border rounded-2xl'> SIGN IN </Link>
         </div>
       </div>
       <div className='flex md:gap-56 sm:gap-5 md:flex-row sm:flex-col-reverse items-center'>
         <p>All contacts:</p>
         <div className='flex gap-5'>
-          <a href='/AddContact' className='bg-yellow-500 p-2 border rounded-2xl'> 
+          <a href='/add-contact' className='bg-yellow-500 p-2 border rounded-2xl'> 
             <button className='flex flex-row items-center gap-3'> 
               ADD NEW <span><FaUserPlus /></span>
             </button>

@@ -22,23 +22,23 @@ function App() {
                     element= {<Home />}
                 />
                 <Route
-                    path= '/:id'
+                    path= '/view/:id'
                     element= {<ViewContact />}
                 />
                 <Route
-                    path= '/UpdateContact/:id'
+                    path= '/update-contact/:id'
                     element= {<UpdateContact />}
                 />
                 <Route
-                    path= '/AddContact'
+                    path= '/add-contact'
                     element= {<AddContact />}
                 />
                 <Route 
-                    path='/SignUp'
+                    path='/sign-up'
                     element={<SignUp />}
                 />
                 <Route 
-                    path='/SignIn'
+                    path='/sign-in'
                     element={<SignIn />}
                 />
             </Routes>

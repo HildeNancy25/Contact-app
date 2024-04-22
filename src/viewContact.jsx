@@ -67,7 +67,7 @@ function ViewContact() {
           </div>
         </div>
         <div className='flex items-center gap-5'>
-            <Link to={`/UpdateContact/${params.id}`} >
+            <Link to={`/update-contact/:id/${params.id}`} >
               <span className='bg-yellow-500 p-2 border rounded-2xl'>Update Contact</span>
             </Link>
             <button onClick={deleteContact} className='bg-red-500 p-2 border rounded-2xl'>delete Contact</button>

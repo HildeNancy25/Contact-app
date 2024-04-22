@@ -37,7 +37,7 @@ const SignUp = () => {
                 password: '',
                 confirmPassword:''
             })
-            window.location.replace('/SignIn');
+            window.location.replace('/sign-in');
         })
         .catch(error =>{
             console.log(error.message)
@@ -88,7 +88,7 @@ const SignUp = () => {
                     placeholder='re-enter password'onChange={handleInput}/>
                 </label>
                 <div >
-                    <Link to ="/SignIn" className=' text-blue-400 underline' >Already have account ?</Link>
+                    <Link to ="/sign-in" className=' text-blue-400 underline' >Already have account ?</Link>
                 </div>
                 <button type='submit'
                 className='bg-yellow-500 p-2 border rounded-2xl mt-4 w-32'
