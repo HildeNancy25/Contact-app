@@ -4,6 +4,7 @@ import { FetchContacts } from "./apis/contacts"
 import { FaUserPlus } from "react-icons/fa6"
 import Contacts from './Contact'
 import { Link } from 'react-router-dom'
+import Header from './Components/Header'
 
 const Home = () => {
 
@@ -35,16 +36,7 @@ const Home = () => {
    
 return (
     <section id='Home' className='flex flex-col gap-8 p-5 items-center'>
-      <div className='flex flex-row items-center md:gap-96 sm:gap-20'>
-        <div>
-          <Link to='/'><img src='https://cdn.iconscout.com/icon/free/png-256/free-contacts-47-461709.png'
-          className=' md:w-12 sm:w-5'></img></Link>
-          <h1 className='md:text-3xl sm:text-lg'><b>Contacts</b></h1>
-        </div>
-        <div>
-          <Link to='/sign-in' className='bg-yellow-500 p-2 border rounded-2xl'> SIGN IN </Link>
-        </div>
-      </div>
+      <Header />
       <div className='flex md:gap-56 sm:gap-5 md:flex-row sm:flex-col-reverse items-center'>
         <p>All contacts:</p>
         <div className='flex gap-5'>

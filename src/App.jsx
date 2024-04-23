@@ -17,12 +17,16 @@ function App() {
     <>
         <Router>
             <Routes>
-                 {/* <Route 
-                    path= '/'
-                    element= {<SignUp />}
-                /> */}
                 <Route 
                     path= '/'
+                    element= {<SignUp />}
+                /> 
+                <Route 
+                    path= '/sign-in'
+                    element= {<SignIn/>}
+                /> 
+                <Route 
+                    path= '/home'
                     element= {<Home />}
                 />
                 <Route
@@ -37,14 +41,7 @@ function App() {
                     path= '/add-contact'
                     element= {<AddContact />}
                 />
-                <Route 
-                    path='/sign-up'
-                    element={<SignUp />}
-                />
-                <Route 
-                    path='/sign-in'
-                    element={<SignIn />}
-                />
+               
             </Routes>
         </Router>
     </>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { FetchContactById } from './apis/contacts'
+import Header from './Components/Header';
 
 function UpdateContact () {
   
@@ -39,11 +40,7 @@ function UpdateContact () {
 
   return (
     <section id='Update' className='flex flex-col gap-8 p-5 items-center'>
-      <div className='flex items-center gap-3'>
-        <Link to='/'><img src='https://cdn.iconscout.com/icon/free/png-256/free-contacts-47-461709.png'
-        className=' w-12'></img></Link>
-        <h1 className='text-3xl'><b>Contacts</b></h1>
-      </div>
+      <Header />
       <div className='mt-5 md:text-3xl sm:text-xl'>Updating contact information</div>
       <div>
         <form className=' flex flex-col gap-3'>

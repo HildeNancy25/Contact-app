@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import { DeleteContact } from './apis/contacts';
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom"
+import Header from './Components/Header';
 
 function ViewContact() {
   let params = useParams();
@@ -50,11 +51,7 @@ function ViewContact() {
 
   return (
     <section className='flex flex-col gap-8 p-5 items-center'>
-        <div className='flex items-center gap-3'>
-            <Link to='/'><img src='https://cdn.iconscout.com/icon/free/png-256/free-contacts-47-461709.png'
-            className=' w-12'></img></Link>
-            <h1 className='text-3xl'><b>Contacts</b></h1>
-        </div>
+        <Header />
         <div className='flex flex-row-reverse items-center justify-center'>
           <div>
             <p className='mb-5 text-2xl'>Contact Details:</p>

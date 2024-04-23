@@ -23,16 +23,16 @@ const SignIn = () => {
           </label>
           <div className='flex flex-row gap-5'>
             <Link to='' className=' text-blue-400 underline' >Forgot password ?</Link>
-            <Link to='/sign-up' className=' text-blue-400 underline' >Don't have account ?</Link>
+            <Link to='/' className=' text-blue-400 underline' >Don't have account ?</Link>
           </div>
-          <div className='mt-3 bg-yellow-500 p-2 border rounded-2xl w-20'><button> SIGN IN </button>
+          <Link to='/home' className='mt-3 bg-yellow-500 p-2 border rounded-2xl w-20'><button> SIGN IN </button>
             {/* <Link to='/'
               className='bg-yellow-500 p-2 border rounded-2xl mt-4 w-20'
             >
               {loading && '...'}
               {!loading && 'SIGN IN'}
             </Link> */}
-          </div>
+          </Link>
         </form>
         {/* <ResponseMessage type={response.type} content={respond.content} /> */}
       </div>

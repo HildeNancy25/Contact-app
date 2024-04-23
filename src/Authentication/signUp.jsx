@@ -34,12 +34,12 @@ const SignUp = () => {
                 <div >
                     <Link to ="/sign-in" className=' text-blue-400 underline' >Already have account ?</Link>
                 </div>
-                <button type='submit'  className='bg-yellow-500 p-2 border rounded-2xl mt-4 w-32'> SIGN UP
+                <Link to='/home' type='submit'  className='bg-yellow-500 p-2 border rounded-2xl mt-4 w-32'> SIGN UP
                 {/* className='bg-yellow-500 p-2 border rounded-2xl mt-4 w-32'
                 > 
                     {loading && '...'}
                     {!loading && 'SIGN UP'} */}
-                </button>
+                </Link>
 
             </form>
             {/* <ResponseMessage type={response.type} content={response.content} /> */}
