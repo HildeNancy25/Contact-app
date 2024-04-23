@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { FetchContactById } from './apis/contacts'
 
 function UpdateContact () {
@@ -40,8 +40,8 @@ function UpdateContact () {
   return (
     <section id='Update' className='flex flex-col gap-8 p-5 items-center'>
       <div className='flex items-center gap-3'>
-        <a href='/'><img src='https://cdn.iconscout.com/icon/free/png-256/free-contacts-47-461709.png'
-        className=' w-12'></img></a>
+        <Link to='/'><img src='https://cdn.iconscout.com/icon/free/png-256/free-contacts-47-461709.png'
+        className=' w-12'></img></Link>
         <h1 className='text-3xl'><b>Contacts</b></h1>
       </div>
       <div className='mt-5 md:text-3xl sm:text-xl'>Updating contact information</div>
@@ -50,7 +50,7 @@ function UpdateContact () {
           {/* <label>
             Profile picture:
             <input className='flex border border-slate-500 text-gray-500 h-40 w-40' type='' name='change photo'/>
-              <a><button type='submit' className='bg-yellow-500 p-2 border rounded-2xl mt-4'>Upload picture</button></a>
+              <Link><button type='submit' className='bg-yellow-500 p-2 border rounded-2xl mt-4'>Upload picture</button></Link>
           </label> */}
           <label>  
             Full names:

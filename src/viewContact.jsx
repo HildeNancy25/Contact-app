@@ -51,8 +51,8 @@ function ViewContact() {
   return (
     <section className='flex flex-col gap-8 p-5 items-center'>
         <div className='flex items-center gap-3'>
-            <a href='/'><img src='https://cdn.iconscout.com/icon/free/png-256/free-contacts-47-461709.png'
-            className=' w-12'></img></a>
+            <Link to='/'><img src='https://cdn.iconscout.com/icon/free/png-256/free-contacts-47-461709.png'
+            className=' w-12'></img></Link>
             <h1 className='text-3xl'><b>Contacts</b></h1>
         </div>
         <div className='flex flex-row-reverse items-center justify-center'>
@@ -67,7 +67,7 @@ function ViewContact() {
           </div>
         </div>
         <div className='flex items-center gap-5'>
-            <Link to={`/update-contact/:id/${params.id}`} >
+            <Link to={`/update-contact/${params.id}`} >
               <span className='bg-yellow-500 p-2 border rounded-2xl'>Update Contact</span>
             </Link>
             <button onClick={deleteContact} className='bg-red-500 p-2 border rounded-2xl'>delete Contact</button>

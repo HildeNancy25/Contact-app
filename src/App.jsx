@@ -17,6 +17,10 @@ function App() {
     <>
         <Router>
             <Routes>
+                 {/* <Route 
+                    path= '/'
+                    element= {<SignUp />}
+                /> */}
                 <Route 
                     path= '/'
                     element= {<Home />}
