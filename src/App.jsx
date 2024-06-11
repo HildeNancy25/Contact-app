@@ -19,11 +19,11 @@ function App() {
             <Routes>
                 <Route 
                     path= '/'
-                    element= {<SignUp />}
+                    element= {<SignIn />}
                 /> 
                 <Route 
-                    path= '/sign-in'
-                    element= {<SignIn/>}
+                    path= '/sign-up'
+                    element= {<SignUp/>}
                 /> 
                 <Route 
                     path= '/home'

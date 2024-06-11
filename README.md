@@ -1,9 +1,10 @@
 # the contact app
-this work is deployed at: https://contact-app-2cjj.onrender.com
 
-It will be allowing user to sign in and:
-view all contacts registered,
-add new contact,
-update your contacts,
-and even delete some of them. 
+Here is where you can find the app: https://contact-app-2cjj.onrender.com
+
+## Functionalities 
+1. View all contacts registered
+2. Add new contact
+3. Delete contact
+4. Update your contacts
 

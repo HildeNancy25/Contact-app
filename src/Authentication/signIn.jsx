@@ -12,18 +12,17 @@ const SignIn = () => {
         </div>
         <form  className='flex flex-col gap-3 mt-5'>
           <label>
-            Full names:
-            <input className='flex border bg-gray-100 border-slate-500 p-2 md:w-80 sm:w-72' type='text' name='fullName'
-              placeholder='enter names'  />
-          </label>
-          <label>
             Email:
             <input className='flex border bg-gray-100 border-slate-500 p-2 md:w-80 sm:w-72' type='email' name='email'
-              placeholder='enter email'  />
+              placeholder='Enter your email'  />
+          </label>
+          <label>
+            Password:
+            <input className='flex border bg-gray-100 border-slate-500 p-2 md:w-80 sm:w-72' type='password' name='password'
+              placeholder='Enter password'  />
           </label>
           <div className='flex flex-row gap-5'>
-            <Link to='' className=' text-blue-400 underline' >Forgot password ?</Link>
-            <Link to='/' className=' text-blue-400 underline' >Don't have account ?</Link>
+            <Link to='/Sign-up' className=' text-blue-400 underline' >Don't have account ?</Link>
           </div>
           <Link to='/home' className='mt-3 bg-yellow-500 p-2 border rounded-2xl w-20'><button> SIGN IN </button>
             {/* <Link to='/'

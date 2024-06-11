@@ -32,9 +32,9 @@ const SignUp = () => {
                     placeholder='re-enter password'/>
                 </label>
                 <div >
-                    <Link to ="/sign-in" className=' text-blue-400 underline' >Already have account ?</Link>
+                    <Link to ="/" className=' text-blue-400 underline' >Already have account ?</Link>
                 </div>
-                <Link to='/home' type='submit'  className='bg-yellow-500 p-2 border rounded-2xl mt-4 w-32'> SIGN UP
+                <Link to='/home' type='submit'  className='mt-3 bg-yellow-500 p-2 border rounded-2xl w-20'> SIGN UP
                 {/* className='bg-yellow-500 p-2 border rounded-2xl mt-4 w-32'
                 > 
                     {loading && '...'}
@@ -42,7 +42,6 @@ const SignUp = () => {
                 </Link>
 
             </form>
-            {/* <ResponseMessage type={response.type} content={response.content} /> */}
         </div>
     </section>
     </>
