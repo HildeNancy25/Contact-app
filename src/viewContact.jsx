@@ -37,7 +37,7 @@ function ViewContact() {
       });
 
       setTimeout(() => {
-        navigate('/');
+        navigate(`/home`);
       }, 1000); 
     })
     .catch((err) => {
@@ -52,10 +52,10 @@ function ViewContact() {
   return (
     <section className='flex flex-col gap-8 p-5 items-center'>
         <Header />
-        <div className='flex flex-row-reverse items-center justify-center'>
-          <div>
-            <p className='mb-5 text-2xl'>Contact Details:</p>
-            <div> {user?.fullName} </div>
+        <p className='mb-5 text-2xl'>Contact Details:</p>
+        <div className='flex flex-row-reverse items-start justify-center gap-3'>
+          <div className=''>
+            <div className='text-xl text-semibold'> {user?.fullName.toUpperCase()} </div>
             <div> {user?.email} </div>
             <div> {user?.phone} </div>
           </div>

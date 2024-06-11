@@ -27,6 +27,9 @@ function UpdateContact () {
         email: response.email,
         phone: response.phone
       })
+      setTimeout(() => {
+        navigate(`/home`);
+      }, 1000);
       
     })
     .catch((err) =>{
@@ -73,7 +76,7 @@ function UpdateContact () {
             className='bg-yellow-500 p-2 border rounded-2xl mt-4'
             >
               {loading && 'loading...'}
-              {!loading && 'Add Contact'}
+              {!loading && 'Update Contact'}
           </button>
         </form> 
       </div>

@@ -63,7 +63,7 @@ const AddContact = () => {
         });
 
         setTimeout(() =>{
-          navigate('/')
+          navigate('/home')
         }, 1000)
       })
       .catch ((error) =>{
@@ -103,14 +103,7 @@ const AddContact = () => {
             <input className='flex border border-slate-500 flex-col-reverse p-2 md:w-80 sm:w-72' type='number' name='phone'
             value={contact.phone} onChange={handleInput} placeholder='enter phone number'/>
           </label>
-          {/* <label>
-            Birth date:
-            <input className='flex border border-slate-500 flex-col-reverse p-2 md:w-80 sm:w-72' type='date' name='date'/>
-          </label>
-          <label>
-            Address:
-            <input className='flex border border-slate-500 flex-col-reverse p-2 md:w-80 sm:w-72' type='text' name='address'/>
-          </label> */}
+          
           <button type='submit'
             disabled={loading}
             className='bg-yellow-500 p-2 border rounded-2xl mt-4'
